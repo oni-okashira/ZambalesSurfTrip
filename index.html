@@ -64,20 +64,12 @@
   .day-card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;margin-bottom:36px;scroll-margin-top:70px;transition:box-shadow .3s}
   .day-card:hover{box-shadow:var(--shadow-hi)}
   .day-photo{position:relative;height:300px;display:flex;align-items:flex-end;overflow:hidden}
-  .day-photo .bg{position:absolute;inset:0;transition:transform .5s}
+  .day-photo .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;background:#334155}
   .day-card:hover .bg{transform:scale(1.04)}
   .day-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(8,20,24,.7))}
   .day-photo .cap{position:relative;z-index:1;padding:24px;color:#fff}
   .badge-day{display:inline-block;background:rgba(255,255,255,.2);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em}
   .day-photo h2{font-size:clamp(1.8rem,4.5vw,2.5rem);line-height:1.1;margin-top:8px}
-  .bg-bgc{background:linear-gradient(160deg,#1E293B 0%,#334155 35%,#0E7490 75%,#F59E5B 100%)}
-  .bg-bgc2{background:linear-gradient(160deg,#3B1E54 0%,#9D3C6B 45%,#E8573A 80%,#FBBF24 100%)}
-  .bg-subic{background:linear-gradient(170deg,#065F46 0%,#0F766E 40%,#0E7490 70%,#7DD3FC 100%)}
-  .bg-crystal{background:linear-gradient(175deg,#FBBF24 0%,#F97316 28%,#0EA5E9 62%,#0E7490 100%)}
-  .bg-coves{background:linear-gradient(170deg,#14532D 0%,#15803D 30%,#14B8A6 60%,#FEF3C7 100%)}
-  .bg-home{background:linear-gradient(170deg,#0B3A47 0%,#1E4E79 45%,#64748B 80%,#CBD5E1 100%)}
-  .day-photo .bg::before{content:"";position:absolute;inset:0;opacity:.18;
-    background:repeating-linear-gradient(115deg,transparent 0 40px,rgba(255,255,255,.4) 40px 41px)}
 
   .day-body{padding:26px 24px 28px}
   .intro{font-size:1.02rem;margin-bottom:16px}
@@ -126,7 +118,7 @@
   .btn.white{background:#fff;color:var(--coral)}
   .btn.outline{border:2px solid #fff;color:#fff}
 
-  footer{background:var(--dark);color:#9FB0B5;text-align:center;padding:80px 16px 36px;margin-top:-40px;font-size:.85rem}
+  footer{background:var(--dark);color:#9FB0B5;text-align:center;padding:40px 16px 36px;font-size:.85rem}
   footer b{color:#fff}
 
   @media (max-width:640px){
@@ -205,22 +197,21 @@
 
   <!-- Nov 18 -->
   <article class="day-card" id="nov18">
-    <div class="day-photo"><div class="bg bg-bgc"></div>
-      <div class="cap"><span class="badge-day">Wed · Nov 18</span><h2>Land &amp; Recover in BGC</h2></div>
+    <div class="day-photo"><img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Bonifacio_Global_City_-_skyline_%28view_from_Pioneer%29_%28Taguig_and_Makati%29%282018-04-24%29_cropped.jpg" alt="Bonifacio Global City skyline" loading="lazy">
+      <div class="cap"><span class="badge-day">Wed · Nov 18</span><h2>Land &amp; Visit Lola in Novaliches</h2></div>
     </div>
     <div class="day-body">
-      <p class="intro">You touch down at dawn after nearly a full day of travel. Keep today gentle: get to the hotel, sleep a little, then stretch your legs around Bonifacio Global City.</p>
-      <div class="note"><b>Book the hotel from the night of Nov 17</b> so your room is ready when you arrive at 8 AM instead of waiting for a mid-afternoon check-in.</div>
+      <p class="intro">You touch down at dawn after nearly a full day of travel. Head straight to your lola's in Novaliches to rest and catch up with family, then loop back to BGC in the afternoon to check in and ease into the evening.</p>
+      <div class="note"><b>Book the hotel from the night of Nov 17</b> so your room is ready whenever you get back to BGC instead of waiting on a same-day check-in.</div>
       <ul class="timeline">
-        <li><div class="t">5:25 AM</div><div class="w"><b>Arrive at NAIA</b><span>Immigration, local SIM or eSIM, then Grab to BGC (30–60 min)</span></div></li>
-        <li><div class="t">8:00 AM</div><div class="w"><b>Hotel check-in</b><span>Shower and nap</span></div></li>
-        <li><div class="t">11:00 AM</div><div class="w"><b>Bonifacio High Street</b><span>Brunch, coffee, an easy walk in daylight to reset your clock</span></div></li>
-        <li><div class="t">3:00 PM</div><div class="w"><b>Manila American Cemetery</b><span>A quiet WWII memorial about 10 minutes away</span></div></li>
+        <li><div class="t">5:25 AM</div><div class="w"><b>Arrive at NAIA</b><span>Immigration, local SIM or eSIM, then Grab to Novaliches (45–75 min depending on traffic)</span></div></li>
+        <li><div class="t">7:30 AM</div><div class="w"><b>Lola's house, Novaliches</b><span>Rest, shower, breakfast and catching up with family</span></div></li>
+        <li><div class="t">3:00 PM</div><div class="w"><b>Head back to BGC</b><span>Grab or drive back (45–60 min)</span></div></li>
+        <li><div class="t">5:00 PM</div><div class="w"><b>Hotel check-in</b><span>Settle in and unpack</span></div></li>
         <li><div class="t">7:00 PM</div><div class="w"><b>Early dinner</b><span>Then bed early</span></div></li>
       </ul>
       <div class="acts">
-        <div class="act"><div class="ico">☕</div><h4>High Street</h4><p>Open-air promenade with cafés, shops and green space.</p><span class="tag easy">Easy</span><span class="tag info">Walkable</span></div>
-        <div class="act"><div class="ico">🕊️</div><h4>American Cemetery</h4><p>Largest US WWII cemetery overseas; calm and moving.</p><span class="tag easy">Easy</span><span class="tag tip">Check hours</span></div>
+        <div class="act"><div class="ico">👵</div><h4>Lola's house</h4><p>Catch up with family in Novaliches after the long flight.</p><span class="tag easy">Easy</span></div>
         <div class="act"><div class="ico">🛍️</div><h4>Uptown / Market! Market!</h4><p>Malls for a SIM, cash, sunscreen and snacks for the road.</p><span class="tag info">Errands</span></div>
       </div>
       <div class="stay"><span class="lbl">🏨 Stay · BGC (Nov 17–19)</span>
@@ -231,7 +222,7 @@
 
   <!-- Nov 19 -->
   <article class="day-card" id="nov19">
-    <div class="day-photo"><div class="bg bg-subic"></div>
+    <div class="day-photo"><img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Subic_Bay_Freeport%2C_Rizal_Highway_%28Olongapo%2C_Zambales%3B_05-21-2023%29.jpg" alt="Subic Bay Freeport" loading="lazy">
       <div class="cap"><span class="badge-day">Thu · Nov 19</span><h2>Olongapo &amp; Subic Bay</h2></div>
     </div>
     <div class="day-body">
@@ -241,7 +232,8 @@
         <li><div class="t">7:00 AM</div><div class="w"><b>Leave BGC</b><span>Beat the Metro Manila traffic</span></div></li>
         <li><div class="t">11:00 AM</div><div class="w"><b>Subic Bay Freeport</b><span>Lunch along the waterfront boardwalk</span></div></li>
         <li><div class="t">1:30 PM</div><div class="w"><b>Afternoon activity</b><span>Ocean Adventure or Zoobic Safari</span></div></li>
-        <li><div class="t">5:30 PM</div><div class="w"><b>Sunset over the bay</b><span>Dinner, then sleep in Subic</span></div></li>
+        <li><div class="t">5:30 PM</div><div class="w"><b>Sunset over the bay</b><span>Golden hour on the boardwalk</span></div></li>
+        <li><div class="t">7:00 PM</div><div class="w"><b>Dinner with Charity friends</b><span>Catching up over dinner in Subic, then sleep</span></div></li>
       </ul>
       <div class="acts">
         <div class="act"><div class="ico">🐬</div><h4>Ocean Adventure</h4><p>Open-water marine park on the bay.</p><span class="tag easy">Easy</span><span class="tag info">Half day</span></div>
@@ -257,14 +249,14 @@
 
   <!-- Nov 20 -->
   <article class="day-card" id="nov20">
-    <div class="day-photo"><div class="bg bg-crystal"></div>
+    <div class="day-photo"><img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/534La_Paz%2C_San_Narciso%2C_Zambales_25.jpg" alt="La Paz beach, San Narciso, Zambales" loading="lazy">
       <div class="cap"><span class="badge-day">Fri · Nov 20</span><h2>Crystal Beach, San Narciso</h2></div>
     </div>
     <div class="day-body">
       <p class="intro">A short coastal drive brings you to the surf town of San Narciso. Get settled, paddle out, and save energy for the sunset.</p>
       <ul class="timeline">
-        <li><div class="t">9:00 AM</div><div class="w"><b>Drive north</b><span>About 1–1.5 hours from Subic</span></div></li>
-        <li><div class="t">12:00 PM</div><div class="w"><b>Check in at Crystal Beach</b><span>Cabanas, tents, or rooms</span></div></li>
+        <li><div class="t">6:30 AM</div><div class="w"><b>Leave Subic</b><span>Early start, about 1–1.5 hours to San Narciso</span></div></li>
+        <li><div class="t">8:00 AM</div><div class="w"><b>Check in at Crystal Beach</b><span>Cabanas, tents, or rooms</span></div></li>
         <li><div class="t">3:00 PM</div><div class="w"><b>Surf lesson</b><span>Beginner-friendly beach break out front</span></div></li>
         <li><div class="t">6:00 PM</div><div class="w"><b>Sunset &amp; bonfire</b><span>The beach faces west</span></div></li>
       </ul>
@@ -273,7 +265,7 @@
         <div class="act"><div class="ico">🔥</div><h4>Bonfire night</h4><p>Grilled seafood and stars on the sand.</p><span class="tag easy">Easy</span></div>
         <div class="act"><div class="ico">🥭</div><h4>Zambales mangoes</h4><p>The province is famous for them; try them fresh.</p><span class="tag info">Local</span></div>
       </div>
-      <div class="stay"><span class="lbl">🏖️ Stay · Crystal Beach (Nov 20–22)</span>
+      <div class="stay"><span class="lbl">🏖️ Stay · Crystal Beach (Nov 20–21)</span>
         <a class="pill alt" href="https://www.google.com/maps/search/Crystal+Beach+San+Narciso+Zambales" target="_blank" rel="noopener">Crystal Beach on Maps</a>
       </div>
     </div>
@@ -281,41 +273,45 @@
 
   <!-- Nov 21 -->
   <article class="day-card" id="nov21">
-    <div class="day-photo"><div class="bg bg-coves"></div>
-      <div class="cap"><span class="badge-day">Sat · Nov 21</span><h2>Capones &amp; the Coves</h2></div>
+    <div class="day-photo"><img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Capones_Island.jpg" alt="Capones Island lighthouse" loading="lazy">
+      <div class="cap"><span class="badge-day">Sat · Nov 21</span><h2>Capones, the Coves &amp; Olongapo at Night</h2></div>
     </div>
     <div class="day-body">
-      <p class="intro">An island-hopping day from Pundaquit: a Spanish-era lighthouse, then lunch on a cove lined with pine trees. Back at Crystal Beach for your last night on the coast.</p>
+      <p class="intro">An island-hopping day from Pundaquit: a Spanish-era lighthouse, then lunch on a cove lined with pine trees. Check out of the resort early and head to Olongapo to go out with the boys — plan on crashing at a friend's place tonight instead of a second night on the coast.</p>
       <div class="note">Boats go out in the morning when the sea is calmest. Mid-November can still bring rough water, so treat this day as weather-dependent and keep the beach as plan B.</div>
       <ul class="timeline">
         <li><div class="t">7:00 AM</div><div class="w"><b>Pundaquit, San Antonio</b><span>About 20 minutes away; hire a bangka (outrigger boat)</span></div></li>
         <li><div class="t">8:00 AM</div><div class="w"><b>Capones Island</b><span>Short hike up to the lighthouse</span></div></li>
         <li><div class="t">11:00 AM</div><div class="w"><b>Anawangin or Nagsasa Cove</b><span>Swim and picnic lunch</span></div></li>
-        <li><div class="t">4:00 PM</div><div class="w"><b>Back to Crystal Beach</b><span>Last sunset, last bonfire</span></div></li>
+        <li><div class="t">1:30 PM</div><div class="w"><b>Check out of Crystal Beach</b><span>Early checkout, load up the car</span></div></li>
+        <li><div class="t">3:00 PM</div><div class="w"><b>Head to Olongapo</b><span>About 1–1.5 hours from San Narciso</span></div></li>
+        <li><div class="t">7:00 PM</div><div class="w"><b>Out with the boys</b><span>Dinner and drinks in Olongapo</span></div></li>
+        <li><div class="t">Late</div><div class="w"><b>Crash with friends</b><span>Staying the night in Olongapo</span></div></li>
       </ul>
       <div class="acts">
         <div class="act"><div class="ico">🗼</div><h4>Capones Lighthouse</h4><p>Rocky climb with sweeping sea views.</p><span class="tag moderate">Moderate</span><span class="tag tip">Water shoes</span></div>
         <div class="act"><div class="ico">🌲</div><h4>Anawangin Cove</h4><p>Agoho pines on volcanic white sand, closer to Pundaquit.</p><span class="tag easy">Easy</span></div>
         <div class="act"><div class="ico">🏝️</div><h4>Nagsasa Cove</h4><p>Farther out and quieter.</p><span class="tag easy">Easy</span><span class="tag info">Longer boat ride</span></div>
+        <div class="act"><div class="ico">🍻</div><h4>Olongapo night out</h4><p>Catch up with the boys over dinner and drinks.</p><span class="tag easy">Easy</span></div>
       </div>
-      <div class="stay"><span class="lbl">🏖️ Stay · Crystal Beach (night 2)</span>
-        <a class="pill alt" href="https://www.google.com/maps/search/Pundaquit+San+Antonio+Zambales" target="_blank" rel="noopener">Pundaquit on Maps</a>
+      <div class="stay"><span class="lbl">🛏️ Crashing with friends · Olongapo (Nov 21)</span>
+        <a class="pill alt" href="https://www.google.com/maps/search/Olongapo+City" target="_blank" rel="noopener">Olongapo on Maps</a>
       </div>
     </div>
   </article>
 
   <!-- Nov 22 -->
   <article class="day-card" id="nov22">
-    <div class="day-photo"><div class="bg bg-bgc2"></div>
+    <div class="day-photo"><img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Bhs_wiki.JPG" alt="Bonifacio High Street" loading="lazy">
       <div class="cap"><span class="badge-day">Sun · Nov 22</span><h2>Back to BGC</h2></div>
     </div>
     <div class="day-body">
-      <p class="intro">One last swim, then the long drive back to the city for a farewell dinner.</p>
-      <div class="note sea"><b>Drive:</b> plan for 4–5 hours. Sunday traffic heading into Metro Manila can be heavy.</div>
+      <p class="intro">One more morning with the boys in Olongapo, then the drive back to the city for a farewell dinner.</p>
+      <div class="note sea"><b>Drive:</b> plan for 3–4 hours from Olongapo. Sunday traffic heading into Metro Manila can still be heavy.</div>
       <ul class="timeline">
-        <li><div class="t">Morning</div><div class="w"><b>Swim &amp; breakfast</b><span>Check out around 11</span></div></li>
-        <li><div class="t">11:30 AM</div><div class="w"><b>Drive to BGC</b><span>Stop for lunch on the way</span></div></li>
-        <li><div class="t">5:00 PM</div><div class="w"><b>Check in, BGC</b><span>Shower and start packing</span></div></li>
+        <li><div class="t">Morning</div><div class="w"><b>Breakfast in Olongapo</b><span>Say bye to the boys, pack up</span></div></li>
+        <li><div class="t">11:00 AM</div><div class="w"><b>Drive to BGC</b><span>Stop for lunch on the way</span></div></li>
+        <li><div class="t">3:00 PM</div><div class="w"><b>Check in, BGC</b><span>Shower and start packing</span></div></li>
         <li><div class="t">7:30 PM</div><div class="w"><b>Farewell dinner</b><span>Uptown or High Street</span></div></li>
       </ul>
       <div class="stay"><span class="lbl">🏨 Stay · BGC (Nov 22)</span>
@@ -326,7 +322,7 @@
 
   <!-- Nov 23 -->
   <article class="day-card" id="nov23">
-    <div class="day-photo"><div class="bg bg-home"></div>
+    <div class="day-photo"><img class="bg" src="https://upload.wikimedia.org/wikipedia/commons/5/50/NAIA_Airport.jpg" alt="NAIA Airport departure hall" loading="lazy">
       <div class="cap"><span class="badge-day">Mon · Nov 23</span><h2>Fly Home</h2></div>
     </div>
     <div class="day-body">
@@ -357,17 +353,10 @@
   </div>
 </section>
 
-<div class="cta">
-  <div class="cta-box">
-    <h3>Ready to lock it in?</h3>
-    <p>Book the flights, then the BGC hotel (from Nov 17), Subic, and Crystal Beach.</p>
-    <a class="btn white" href="https://www.google.com/maps/search/Crystal+Beach+Resort+San+Narciso+Zambales" target="_blank" rel="noopener">Find Crystal Beach</a>
-    <a class="btn outline" href="https://www.google.com/maps/dir/Bonifacio+Global+City/Subic+Bay+Freeport+Zone/San+Narciso,+Zambales/Bonifacio+Global+City" target="_blank" rel="noopener">See the route</a>
-  </div>
-</div>
 
 <footer>
   <p><b>Norfolk → Chicago → Manila</b> · BGC → Olongapo → San Narciso → BGC · <b>Nov 16–23, 2026</b></p>
+  <p style="margin-top:14px;font-size:.72rem;opacity:.6">Photos via Wikimedia Commons, CC BY-SA / public domain</p>
 </footer>
 </body>
 </html>
